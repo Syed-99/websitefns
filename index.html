@@ -13,8 +13,8 @@
             box-sizing: border-box;
             overflow-x: hidden;
         }
-        body{
-            max-width: 1400px;
+        .parent{
+            max-width: 100%;
             box-sizing: border-box;
         }
         header{
@@ -24,7 +24,7 @@
             height: 15%;
              background-color: #FFFFFF;
                 position: fixed;
-                width: 1500px;
+                width: 100%;
                 color: gray;
     
     
@@ -71,7 +71,7 @@
         }
     main{
         height: 75%;
-        max-width: 1400px;
+        max-width: 100%;
     }
     .main_img16{
         display: flex;
@@ -81,7 +81,7 @@
         
         overflow: hidden;
        
-       max-width: 1400px;
+       max-width: 100%;
     
     }
     .main_img19{
@@ -109,10 +109,11 @@
 .footer{
     background-color:  #38526c;
     color: gray;
-    object-fit: cover;
+    
     padding-left: 80px;
     padding-top: 30px;
     padding-right: 100px;
+    width: 100%;
 }
 .footer a,p,li{
     color: #D3D3D3;
@@ -128,17 +129,47 @@
 ul {
             list-style-type: circle; /* Makes the bullets empty circles */
         }
+
+
+
+
+        .main_img16 img:hover {
+  transform: scale(1.05); 
+  transition: transform 0.75s;
+        }
+        .main_img19 img:hover {
+  transform: scale(1.05); 
+  transition: transform 0.75s;
+        }
+        .main_img25 img:hover {
+  transform: scale(1.05); 
+  transition: transform 0.75s;
+        }
+
+        .main_img27 ,    .main_img29 ,  .main_img28 img:hover {
+  transform: scale(1.01); 
+  transition: transform 0.75s;
+        }
+
+
+
+
+
+
+
+
+
     </style>
 </head>
 <body>
-    
+    <div  class="parent">
     <header>
         <div  class="head_img" ><img src="Ajio-Logo.svg"></div>
         <div class="head_info">
             <div class="head_info_1">
                 <a href="#" >Sign In / Join AJIO</a>
                 <a href="#" >Customer Care</a>
-                <a  href="#" style="background-color: black;color: white;width:120px;height: auto;">Visit AJIOLUXE</a>
+                <a  href="#" style="background-color: black;color: white;width:12%;height: 30px;padding-top:0;text-align: center;">Visit AJIOLUXE</a>
             </div>
             <div class="head_info_2">
                 <a href="#" >MEN</a>
@@ -146,7 +177,7 @@ ul {
                 <a href="#" >KIDS</a>
                 <a href="#" >BEAUTY</a>
                 <a href="#">HOME & KITCHEN</a>
-                <input type="text" placeholder="Search AJIO" style="background-color: peachpuff;border: 1px solid gray;height: 30px;border-radius: 20px;">
+                <input type="text" placeholder="Search AJIO" style="background-color: peachpuff;border: 1px solid gray;height: 30px;border-radius: 20px;width: 30%;">
                 <i class="fa  fa-heart" style="size: 17px;"></i>
                 <i class="fa fa-shopping-bag"></i>
             </div>
@@ -155,11 +186,11 @@ ul {
     </header>
 
     <main>
-        <div class="main_img1" style="height: 600px;max-width: 1400px;">
-            <img src="img1.avif"  style="object-fit: cover;overflow: hidden;padding-top: 120px;max-width: 1400px;">
+        <div class="main_img1" style="height: 600px;max-width: 100%;">
+            <img src="img1.avif"  style="object-fit: cover;overflow: hidden;padding-top: 120px;max-width: 100%;padding-left: 100px;">
         </div>
         <div   class="main_img2">
-            <img  src="img2.avif" style="padding-left: 40px;padding-top: 10px;width: 1400px;">
+            <img  src="img2.avif" style="padding-left: 25px;padding-top: 10px;width: 100%;">
         </div>
         <div   class="main_img3">
             <img  src="img3.avif"  style="padding-top: 40px;padding-left: 30px;">
@@ -169,31 +200,31 @@ ul {
             <img src="img4.avif"  style="padding-left: 30px;">
         </div>
         <div   class="main_img5">
-            <img  src="img5.avif" style="padding-top: 40px;max-height: 300px;padding-left: 30px;">
+            <img  src="img5.avif" style="padding-top: 40px;max-height: 50%;padding-left: 30px;">
         </div>
         <div   class="main_img6">
-            <img  src="img6.webp" style="padding-left: 20px;height: 180px;">
+            <img  src="img6.webp" style="padding-left: 10px;height: 180px;width: 100%;">
         </div>
         <div   class="main_img7">
-            <img  src="img7.avif" style="padding-left: 20px;height: 180px;">
+            <img  src="img7.avif" style="padding-left: 20px;height: 180px;width: 100%;">
         </div>
         <div class="main_img8">
-            <img src="img8.avif"  style="object-fit: cover;overflow: hidden;wpadding-top: 50px;">
+            <img src="img8.avif"  style="object-fit: cover;overflow: hidden;padding-top: 50px;padding-left: 30px;">
         </div>
         <div class="main_img9">
-            <img src="img9.avif" style="padding-top: 30px;">
+            <img src="img9.avif" style="padding-top: 30px;width: 100%;">
         </div>
         <div class="main_img10">
-            <img src="img10.avif" >
+            <img src="img10.avif" style="width: 100%;">
         </div>
         <div class="main_img11">
-            <img src="img11.avif" >
+            <img src="img11.avif"  style="width: 100%;" >
         </div>
         <div class="main_img12">
-            <img src="img12.webp" >
+            <img src="img12.webp" style="width: 100%;">
         </div>
         <div class="main_img13">
-            <img src="img13.jpg" >
+            <img src="img13.jpg" style="width: 100%;">
         </div>
         <div class="main_img14">
             <img src="img14.webp" style="padding-top: 30px;">
@@ -201,93 +232,93 @@ ul {
         <div class="main_img15">
             <img src="img15.avif" >
         </div>
-        <div class="img16" style="background-color: red;max-width: 1400px;overflow: hidden;gap:10px;">
-            <img src="img16.webp" >
-        <div class="main_img16" style="max-width: 1400px;overflow: hidden;gap:10px;">
-            <img src="img16_1.avif" style="width: 200px;">
-            <img src="img16_2.avif"style="width: 200px;">
-            <img src="img16_3.avif" style="width: 200px;">
-            <img src="img16_4.avif" style="width: 200px;">
-            <img src="img16_5.jpg" style="width: 200px;">
-            <img src="img16_6.jpg"   style="width: 200px;">
+        <div class="img16" style="background-color: red;max-width: 100%;overflow: hidden;gap:10px;">
+            <img src="img16.webp" style="width: 100%;">
+        <div class="main_img16" style="max-width: 100%;overflow: hidden;gap:10px;">
+            <img src="img16_1.avif" style="width: 20%;">
+            <img src="img16_2.avif"style="width: 20%;">
+            <img src="img16_3.avif" style="width: 20%;">
+            <img src="img16_4.avif" style="width: 20%;">
+            <img src="img16_5.jpg" style="width: 20%;">
+            <img src="img16_6.jpg"   style="width: 20%;">
         </div>
         </div>
         <div class="main_img17">
-            <img src="img17.avif" >
+            <img src="img17.avif" style="width: 100%;" >
         </div>
         <div class="main_img18">
-            <img src="img18.avif" >
+            <img src="img18.avif" style="width: 100%;">
         </div>
-        <div  class="winter">
+        <div  class="winter"  >
         <div class="main_img19">
-            <img src="img19.avif" style="padding-top: 30px;max-width: 1400px;overflow: hidden;gap:10px;">
+            <img src="img19.avif" style="padding-top: 30px;width: 100%;overflow: hidden;gap:10px;">
         </div>
-        <div class="main_img19">
-            <img src="img19_1.avif" style="width: 230px;">
-            <img src="img19_2.avif" style="width: 230px;">
-            <img src="img19_3.avif" style="width: 230px;">
-            <img src="img19_4.avif" style="width: 230px;">
-            <img src="img19_5.avif"  style="width: 230px;">
+        <div class="main_img19" style="width: 100%;">
+            <img src="img19_1.avif" style="width: 22%;">
+            <img src="img19_2.avif" style="width: 22%;">
+            <img src="img19_3.avif" style="width: 22%;">
+            <img src="img19_4.avif" style="width: 22%;">
+            <img src="img19_5.avif"  style="width: 22%;">
         </div>
     </div>
         <div class="main_img21">
-            <img src="img21.avif" >
+            <img src="img21.avif"style="width: 100%;" >
         </div>
         <div class="main_img22">
-            <img src="img22.avif" >
+            <img src="img22.avif" style="width: 100%;">
         </div>
         <div class="main_img23">
-            <img src="img23.avif" >
+            <img src="img23.avif" style="width: 100%;padding-left: 20px;">
         </div>
         <div class="western">
         <div class="main_img24">
-            <img src="img24.avif" style="padding-top: 50px;">
+            <img src="img24.avif" style="padding-top: 50px;width: 100%;">
         </div>
         <div class="main_img25">
-            <img src="img25_1.avif" style="width: 380px;height: 500px;">
-            <img src="img25_2.avif" style="width: 380px;">
-            <img src="img25_3.avif" style="width: 380px;">
-            <img src="img25_4.avif" style="width: 380px;">
+            <img src="img25_1.avif" style="width: 25%;height: 500px;">
+            <img src="img25_2.avif" style="width: 25%;">
+            <img src="img25_3.avif" style="width: 25%;">
+            <img src="img25_4.avif" style="width: 25%;">
         </div>
         </div>
         <div class="main_img26">
-            <img src="img26.avif" style="padding-top: 20px;">
+            <img src="img26.avif" style="padding-top: 20px;width: 100%;">
         </div>
         <div class="main_img27">
-            <img src="img27_1.avif" style="width: 380px;height: 500px;">
-            <img src="img27_2.avif" style="width: 380px;">
-            <img src="img27_3.avif" style="width: 380px;">
-            <img src="img27_4.avif" style="width: 380px;">
+            <img src="img27_1.avif" style="width: 25%;height: 500px;">
+            <img src="img27_2.avif" style="width: 25%;">
+            <img src="img27_3.avif" style="width: 25%;">
+            <img src="img27_4.avif" style="width: 25%;">
         </div>
         <div class="footwear">
             <div class="main_img28">
-                <img src="img28.avif" style="padding-top: 50px;">
+                <img src="img28.avif" style="padding-top: 50px;width: 100%;">
             </div>
             <div class="main_img28">
-                <img src="img28_1.avif" style="width: 380px;height: 500px;">
-                <img src="img28_2.avif" style="width: 380px;">
-                <img src="img28_3.webp" style="width: 380px;">
-                <img src="img28_4.avif" style="width: 380px;">
+                <img src="img28_1.avif" style="width: 25%;height: 500px;">
+                <img src="img28_2.avif" style="width: 25%;">
+                <img src="img28_3.webp" style="width: 25%;">
+                <img src="img28_4.avif" style="width: 25%;">
             </div>
             </div>
 
 
             <div class="inner">
                 <div class="main_img29">
-                    <img src="img29.avif" style="padding-top: 50px;">
+                    <img src="img29.avif" style="padding-top: 50px;width: 100%;">
                 </div>
-                <div class="main_img29">
-                    <img src="img29_1.avif" style="width: 380px;height: 500px;">
-                    <img src="img29_2.avif" style="width: 380px;">
-                    <img src="img29_3.avif" style="width: 380px;">
-                    <img src="img29_4.avif" style="width: 380px;">
+                <div class="main_img29"  >
+                    <img src="img29_1.avif" style="width: 25%;height: 500px;">
+                    <img src="img29_2.avif" style="width: 25%;">
+                    <img src="img29_3.avif" style="width: 25%;">
+                    <img src="img29_4.avif" style="width: 25%;">
                 </div>
                 </div>
                 <div class="main_img30">
-                    <img  src="img30.avif"  >
+                    <img  src="img30.avif" style="width: 100%;" >
                 </div>
                 <div class="main_img31">
-                    <img  src="img31.png"  >
+                    <img  src="img31.png" style="width: 100%;" >
                 </div>
     </main>
 
@@ -349,7 +380,7 @@ ul {
             <li>Exclusive Offers: Unlock discounts and deals crafted for the savvy shopper.</li>
         </ul>
     </div>
-
+</div>
 
 </body>
 </html>
